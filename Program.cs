@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using YogaShastraTeacherCourseApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +11,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddControllersWithViews();
-
+                                // add DI services here!!!
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

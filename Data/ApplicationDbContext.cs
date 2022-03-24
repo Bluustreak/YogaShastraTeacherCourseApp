@@ -1,5 +1,6 @@
 ﻿
 
+
 namespace YogaShastraTeacherCourseApp.Data
 {
     public class ApplicationDbContext : IdentityDbContext
@@ -10,6 +11,7 @@ namespace YogaShastraTeacherCourseApp.Data
 
         }
 
-        public DbSet<TeacherCourseController> TeacherCourses { get; set; }
+        //public DbSet<Test> TestsInputs { get; set; }
+        public DbSet<TeacherCourse> TeacherCourses { get; set; }
     }
 }

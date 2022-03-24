@@ -2,14 +2,12 @@
 {
     public class TeacherCourse
     {
-        public TeacherCourse()
-        {
-
-        }
+       
 
         public int Id { get; set; }
         public string TitleA { get; set; } = string.Empty;
         public string TitleB { get; set; } = string.Empty;
+        public string TitleC { get; set; } = string.Empty;
         public string ImageHeaderUrl { get; set; } = string.Empty;
 
         public string ParagraphA1 { get; set; } = string.Empty;
@@ -75,7 +73,10 @@
         public string DaPNominalPrice { get; set; } = string.Empty;
         public string DaPDiscountedPrice { get; set; } = string.Empty;
 
-       
 
+        public TeacherCourse()
+        {
+
+        }
     }
 }

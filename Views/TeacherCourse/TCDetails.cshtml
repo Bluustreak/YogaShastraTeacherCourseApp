@@ -1,0 +1,1015 @@
+﻿@model YogaShastraTeacherCourseApp.Models.TeacherCourse
+
+@{
+    ViewData["Title"] = "TCDetails";
+}
+
+<h1>TCDetails</h1>
+
+<div>
+    <h4>TeacherCourse</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TitleA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TitleA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TitleB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TitleB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ImageHeaderUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ImageHeaderUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphA1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphA1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphA2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphA2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphA3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphA3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphB1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphB1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphB2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphB2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphB3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphB3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphB4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphB4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphC1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphC1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphC2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphC2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParagraphC3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParagraphC3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Testimonial1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Testimonial1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Testimonial2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Testimonial2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Testimonial3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Testimonial3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InfoFloatBox1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InfoFloatBox1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InfoFloatBox2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InfoFloatBox2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InfoFloatBox3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InfoFloatBox3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InfoFloatBox4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InfoFloatBox4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InfoFloatBox5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InfoFloatBox5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent6)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent6)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent7)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent7)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent8)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent8)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent9)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent9)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatToLearnBoxContent10)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhatToLearnBoxContent10)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard1ImageUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard1ImageUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard1Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard1Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard1Role)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard1Role)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard1Readmore)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard1Readmore)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard2ImageUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard2ImageUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard2Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard2Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard2Role)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard2Role)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard2Readmore)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard2Readmore)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard3ImageUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard3ImageUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard31Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard31Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard3Role)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard3Role)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard3Readmore)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard3Readmore)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard4ImageUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard4ImageUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard4Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard4Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard4Role)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard4Role)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OurTeamCard4Readmore)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OurTeamCard4Readmore)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPTitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPDuration)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPDuration)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPGathering1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPGathering1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPGathering2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPGathering2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPGathering3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPGathering3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPGathering4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPGathering4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPNominalPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPNominalPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaPDiscountedPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaPDiscountedPrice)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+@{
+    ViewData["Title"] = "Hatha Yoga Teacher's Training Course";
+}
+
+<div class="container-fluid">
+<img class="responsive" src="@Model.ImageHeaderUrl" alt="Hatha Yoga Teacher's Training Course at Yoga Shastra"/>
+</div>
+
+<div class="container py-5">
+<h1 class="text-center">@Model.TitleA</h1>
+<h3 class="text-center">@Model.TitleB</h3>
+<h4 class="text-center">@Model.TitleC</h4>
+<br />
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+                @Model.ParagraphA1
+            </p>
+            <p>
+               @Model.ParagraphA2
+            </p>
+            <p>
+                @Model.ParagraphA3
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<div class="px-4 py-5" style="background-color:#ffc10763">
+            <div class="col-lg-8 mx-auto">
+                <p class="mb-12">
+                    @Model.ParagraphB1
+                </p>
+                <p>
+                @Model.ParagraphB2
+                </p>
+                <p>
+                @Model.ParagraphB3
+                </p>
+                <p>
+                @Model.ParagraphB4
+                </p>
+                <p>
+                
+                </p>
+                <br />
+                <div class="card-body" style="background-color:#ffffff75"> 
+                    <h3 class="card-title text-center">Who should do this teacher training course?</h3>
+                <p>
+                @Model.ParagraphC1
+                </p>
+                <p>
+                @Model.ParagraphC2
+                </p>
+                </div>
+            </div>
+        </div>
+
+@*Testimonials slides css*@
+<section class="pn_reviews my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Testimonial</h2>
+            </div>
+
+            <div class="col-md-12 col-lg-4">
+                <div class="pn_testimonial_box mt-4">
+                    <p>TTC review</p>
+                    <p class="text-justify">@Model.Testimonial1
+                    </p>
+                    <div class="row pt-3">
+                        <div class="col-md-12 pn_review_profile">
+                            <img src="~/images/carl.png" class="border-radius-12 float-right" alt="client image" />
+                            <p style="text-align:right">Carl<br />YTTC 2021<br />Linköping, Sweden</p></div>
+                        @*<div class="col-md-6 pn_review_rating d-flex justify-content-end"> 5 &nbsp; <img class="image-radius aligncenter" src="https://desklib.com/static/src/assets/images/v2/star_rating.svg" alt="client stars image" /> </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="pn_testimonial_box mt-4">
+                  <p>TTC review</p>
+                    <p class="text-justify">@Model.Testimonial2
+                    </p>
+                    <div class="row pt-3">
+                        <div class="col-md-12 pn_review_profile">
+                            <img src="~/images/ida.png" class="border-radius-12 float-right" alt="client image" />
+                            <p style="text-align:right">Ida<br />YTTC 2020<br />Tønsberg, Norway</p></div>
+                        @*<div class="col-md-6 pn_review_rating d-flex justify-content-end"> 5 &nbsp; <img class="image-radius aligncenter" src="https://desklib.com/static/src/assets/images/v2/star_rating.svg" alt="client stars image" /> </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="pn_testimonial_box mt-4">
+                 <p>TTC review</p>
+                    <p class="text-justify">@Model.Testimonial3
+                     </p>
+                    <div class="row pt-3">
+                        <div class="col-md-12 pn_review_profile">
+                            <img src="~/images/kristina.png" class="border-radius-12 float-right" alt="client image" />
+                            <p style="text-align:right">Kristina<br />YTTC 2021<br />Linköping, Sweden</p></div>
+                        @*<div class="col-md-6 pn_review_rating d-flex justify-content-end"> 5 &nbsp; <img class="image-radius aligncenter" src="https://desklib.com/static/src/assets/images/v2/star_rating.svg" alt="stars image" /> </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="alert alert-success" role="alert">
+            <h4><img src="~/images/yoga-lotus-blue.png" width="5%" alt="" /> Who can join this course?</h4>
+            @Model.InfoFloatBox1
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h4><img src="~/images/yoga-lotus-blue.png" width="5%" alt="" /> Yoga teachers from any tradition</h4>
+            @Model.InfoFloatBox2
+        </div>
+                <div class="alert alert-success" role="alert">
+            <h4><img src="~/images/yoga-lotus-blue.png" width="5%" alt="" /> What makes this course unique</h4>
+            @Model.InfoFloatBox3
+        </div>
+    </div>
+        <div class="col-md-6">
+         <div class="alert alert-success" role="alert">
+            <h4><img src="~/images/yoga-lotus-blue.png" width="5%" alt="" /> Authentic teachings</h4>
+            <p>
+                The program honours the traditional Yogic knowledge system as it has been passed down to us via a lineage of 
+                thousands of years. Our focus is on applying the ancient practices in modern-day life while maintaining the 
+                integrity of the teachings.
+            </p>
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h4><img src="~/images/yoga-lotus-blue.png" width="5%" alt="" /> Ayurveda</h4>
+            <p>
+               Dr Vishnu will teach the Basic Principles of Ayurveda through online. During the classes, you will learn:
+               <ul>
+                   <li>
+                       <p>
+                           Introduction to Ayurveda, The Five Elements (Panchamahabhoota Theory) & Connected Body Functions, 
+                           The 3 GunasThe 3 Doshas (Vata, Pitta, Kapha) Ayurvedic Diet & LifestyleThe importance of Digestion, 
+                           Digestive Fire (Agni) & Metabolic Toxins (Ama)
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                          We offer a free Ayurvedic consultation to know your Dhoshas.
+                       </p>
+                   </li>
+               </ul>
+            </p>
+        </div>
+                <div class="alert alert-success" role="alert">
+            <h4><img src="~/images/yoga-lotus-blue.png" width="5%" alt="" /> Modern approach</h4>
+            <p>
+                We explore connections between the Yogic science and modern scientific findings to give you the theoretical, 
+                practical as well as the spiritual foundation to teach Yoga to anyone in all its aspects.
+            </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+@*Accordion - What to learn*@
+<div class="container-fluid">
+    <div class="px-4 py-5 my-5" style="background-color:#af4d9d78">
+        <div class="col-lg-10 mx-auto">
+            <h2 class="text-center">
+                What to learn
+            </h2>
+            <div class="row">
+                <div class="col-md-6 py-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <b>Introduction to yoga</b>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The four paths of Yoga (Bhakti yoga, Karma yoga, Raja yoga and Jnana Yoga)
+                                    </p>
+                                    <p>
+                                        Hatha Yoga
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <b>Asana (yoga poses)</b>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        You will study and practice yoga poses in each class as the teachers guide you on how to
+                                        teach asanas and pranayama. The daily practice with individual corrections includes:
+                                    </p>
+                                    <p>Sun salutation</p>
+                                    <p>Yoga postures</p>
+                                    <p>Asana variations, from basic level to intermediate</p>
+                                    <p>Postural alignment</p>
+                                    <p>How to improve concentration techniques while you holding the pose</p>
+                                    <p>Deep relaxation with autosuggestion</p>
+                                    <p>Facilitate energy flow and remove blocked energy</p>
+                                    <p>How to teach a yoga class for beginners and the next level.</p>
+                                    <p>Pregnancy yoga</p>
+                                    <p>Kids Yoga</p>
+                                    <p>Yoga for senior citizens</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <b>Dhyana (meditation)</b>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        “Dhyanam Nirvishayam manah” The state of the mind wherein there is no Vishayas or sensual
+                                        thoughts meditation.
+                                    </p>
+                                    <p>Guide to meditation</p>
+                                    <p>What is meditation?</p>
+                                    <p>Why meditate?</p>
+                                    <p>How to meditate</p>
+                                    <p>Concentration and thought power</p>
+                                    <p>Effects of and experiences in meditation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <b>Yoga & vedanta philosophy</b>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        In this section, you will be exploring the philosophy and aim of yoga. Look into the deeper
+                                        dimensions of the mind, body, and spirit through the study of classical yoga text and
+                                        Vedanta philosophy.
+                                    </p>
+                                    <p>
+                                        The philosophy classes are considered the main teaching and will benefit you for a long
+                                        time as the seeds of knowledge are being transmitted.  The study of classical yoga texts
+                                        such as the Patanjali Yoga-sutras, Bhagavad Gita, Vedanta and the writings of our yoga
+                                        Gurus will also take place to enrich you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <b>Anatomy and physiology</b>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        This study helps you to improve the understanding of your body during your own yoga practice,
+                                        and to apply it in your teaching practice.
+                                    </p>
+                                    <p>
+                                        You will learn: The effects of asanas and pranayama on the cardiovascular, respiration,
+                                        digestion, skeletal muscular and endocrine systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 py-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <b>Yogic and ayurvedic diet</b>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        We are what we eat! Proper nutrition and diet provide proper fuel for the body and the
+                                        mind without creating toxins and digestive problems. Optimum utilization of food, air,
+                                        water and sunlight is essential.  The Yogic vegetarian diet is sattvic (pure), and helps
+                                        to calm the mind and to reveal the spirit as well as nourish the body.
+                                    </p>
+                                    <p>
+                                        Healing effects of fasting.
+                                    </p>
+                                    <p>
+                                        Yogic and Ayurvedic diet for physical, mental and spiritual health.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <b>Kriyas (yogic cleansing exercise)</b>
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        You will learn the six classical purification exercises with a more detailed explanation
+                                        and we do some demonstration as well.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <b>Pranayama (yogic breathing techniques)</b>
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Yogic breathing techniques (pranayama) are devised to further purify the nadis, balance
+                                        the breath and the energy in our system, and to store and channel the subtle energy (prana) for higher purposes.
+                                    </p>
+                                    <p>You will learn from the very basic breathing techniques to many advance pranayama.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    <b>Kirtan</b>
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Chanting kirtan is a devotional practice that helps to uplift the mind open the heart and
+                                        bring inner peace. It is the fastest, easiest and most joyful way to achieve peace of mind.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapsTen">
+                                    <b>Mantra</b>
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The mantras are mystical universal sounds that resonate with our chakras and remove negative energies.
+                                    </p>
+                                    <p>
+                                        What is the mantra and how to chant the mantra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Meet our team*@
+<div class="team-section">
+    <div class="inner-width">
+        <div class="pers">
+            <h2 class="text-center">
+               Meet our team
+            </h2>
+            <div class="pe">
+                <img src="~/images/rajesh_dayakar.jpg" alt="Hatha Yoga Teacher Rajesh Dayakar" />
+                <div class="p-name">Rajesh Dayakar</div>
+                <div class="p-des">Hatha Yoga Teacher</div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                    Read more
+                </button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Rajesh Dayakar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Rajesh is a classic Hatha Yoga teacher with more than 13 years of teaching experience. Rajesh has taught many
+                                    Yoga teacher training courses internationally in India, Bali and Europe.</p> 
+                                    <p>He was born and raised in Kerala, India the land of Yoga and Ayurveda. He has been staying five years to learn yoga 
+                                        and its philosophy at Sivananda yoga ashram in India. Which is the largest Yoga ashram in South India to where thousands of students 
+                                        are coming from all around the world to learn yoga. </p> 
+                                    <p> Rajesh teaches yoga in its purest form according to ancient scriptures of
+                                    yoga system with Meditation, Pranayama (Yogic breathing techniques) Kriyas and yoga philosophy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+
+                <div class="p-sm">
+                    <a href="mailto:info@yogashastra.org"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/yogashastra.org" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yogashastra/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCULJfdKs0VS8ei5MLVgykNg" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="pe">
+                <img src="~/images/fredrik_binette_ttc.jpg" alt="Hatha Yoga Teacher Fredrik Binette" />
+                <div class="p-name">Fredrik Binette</div>
+                <div class="p-des">Hatha Yoga Teacher</div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                    Read more
+                </button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fredrik Binette</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    The experienced teacher within the world of classical Yoga, Meditation & Yoga Nidra.
+                                </p>
+                                <p>
+                                    He has more than 5500h of teaching experience and has been a lead trainer for several HathaYoga & Meditation teacher training as well as 
+                                    an Ayurveda Yoga THerapy training in India.
+                                </p>
+                                <p>
+                                    Fredrik’s background (or education or training) 200h TTC in Singapore with MasterYogi Sivaram. 200h TTC at a Yoga Ashram in Kerala Indien. 
+                                    Advanced TTC at an Ashram n Germany. Meditation training with Swami Saradananda
+                                </p>
+                                <p>
+                                    Yoga Nidra training (twice) with Chitra Sukhu. Ongoing – deepening within Mantra Meditation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="p-sm">
+                    <a href="https://www.instagram.com/fredrikbinette.yoga/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="pe">
+                <img src="~/images/dr_vishnu.jpg" alt="Ayurvedic Doctor Vishnu" />
+                <div class="p-name">Dr Vishnu</div>
+                <div class="p-des">Ayurvedic Doctor</div>
+                 <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+                      Read more
+                    </button>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dr Vishnu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                                    Dr Vishnu holds a Bachelor’s of Ayurvedic Science and Surgery from Rajeev Gandhi University in Bangalore, 
+                                    South India. He is specialised in the treatment of neurological, rheumatic and bone degenerative diseases.
+                                    After receiving the bachelor’s degree, he pursued a Master’s degree in Panchakarma, which is a popular 
+                                    treatment method in Ayurveda to eliminate toxins from the body due to disease, food and environment.
+                                </p>
+                                <p>
+                                    Currently, he works as the Director of the Sivananda Institute of Health (SIH) at Sivananda Ashram, 
+                                    Neyyardam, Kerala, India, which was established in 1985. He examines thousands of patients every month 
+                                    from all around the world. As an expert in Panchakarma, he conducts Panchakarma classes for over 300 
+                                    students every year and also conducts various Ayurvedic courses at SivanandaAshram in Neyyardam. He also 
+                                    travels every summer to the Sivananda Ashram, Val-Morin, Canada and to Japan to conduct Ayurvedic classes 
+                                    and consultations.
+                                </p>
+                                <p>
+                                    Currently, he works as the Director of the Sivananda Institute of Health (SIH) at Sivananda Ashram, 
+                                    Neyyardam, Kerala, India, which was established in 1985. He examines thousands of patients every month 
+                                    from all around the world. As an expert in Panchakarma, he conducts Panchakarma classes for over 300 
+                                    students every year and also conducts various Ayurvedic courses at SivanandaAshram in Neyyardam. He also 
+                                    travels every summer to the Sivananda Ashram, Val-Morin, Canada and to Japan to conduct Ayurvedic classes 
+                                    and consultations.
+                                </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <!-- Modal -->
+                <div class="p-sm">
+                    <a href="mailto:dr.vishnu101@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+
+                <div class="pe">
+                <img src="~/images/datta_prasad.jpg" alt="Yoga Therapist Datta Prasad" />
+                <div class="p-name">Datta Prasad</div>
+                <div class="p-des">Yoga Therapist</div>
+                  <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+                    Read more
+                </button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Datta Prasad</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Datta Prasad is a certified Yoga Therapist from a prestigious SVYASA Yoga University, Bangalore with more 
+                                    than a decade of rich and varied experience of working in the field of Yoga with many renowned & reputed 
+                                    organizations. </p>
+                                <p>Yoga for him is a Spiritual journey, a lifelong passion & an ever-inspiring vocation. He 
+                                    strongly believes – yoga is a life-transformative art & science with huge capabilities to radically 
+                                    transform individual lives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div class="p-sm">
+                    @*<a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tumblr"></i></a>*@
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <partial name="testgallery.cshtml"/>
+</div>
+
+@*Extra info*@
+<div class="container py-5">
+  <div class="p-5 bg-blue rounded shadow mb-5">
+    <!-- Bordered tabs-->
+    <ul id="myTab1" role="tablist" class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
+      <li class="nav-item flex-sm-fill">
+        <a id="date1-tab" data-toggle="tab" href="#date1" role="tab" aria-controls="date1" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active">Date</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="price1-tab" data-toggle="tab" href="#price1" role="tab" aria-controls="price1" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Price</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="register1-tab" data-toggle="tab" href="#register1" role="tab" aria-controls="register1" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0 border">Register</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="contact1-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact1" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Contact</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="faq1-tab" data-toggle="tab" href="#faq1" role="tab" aria-controls="faq1" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0 border">FAQ</a>
+      </li>
+    </ul>
+    <div id="myTab1Content" class="tab-content">
+      <div id="date1" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+        <p class="leade font-italic">YTTC Spring 2022<br />
+                Dates for gathering (Thursday – Sunday)<br />
+                1st gathering: 3,4,5,6th March<br />
+                2nd gathering: 31st March, 1,2,3 April<br />
+                3rd gathering: 28,29,30 April and 1st May<br />
+                4th gathering: 26,27,28,29th May<br />
+            </p>
+      </div>
+      <div id="price1" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+        <p class="leade font-italic">The price is 39000 SEK<br />
+                <h3 style="color: #AF4D9D">PREMIERE 34000 SEK OFFER</h3>
+        </p>
+      </div>
+      <div id="register1" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+        <p class="leade font-italic">Please use our registration form to register for the training.</p>
+        <p><a href="@Url.Action("CreateForm", "ArrangementRegistrationForm", new { courseTitle = "-- Hatha Yoga - Teacher's Training Course in Linköping" })" class="btn btn-warning btn-lg">Register</a></p>
+                @*<a class="btn btn-warning btn-lg" href="/ArrangementRegistrationForm/CreateForm">Register</a>*@
+      </div>
+      <div id="contact1" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+        <p class="leade font-italic">If you have any questions about the training you can make an appointment with Rajesh through 
+                Zoom or you are very welcome to our studio.<br />Send us a message.</p>
+                <a class="btn btn-warning btn-lg" href="/Message/ContactForm">Contact Rajesh</a>
+      </div>
+      <div id="faq1" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What is needed to participate in this training?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          Many people attend these training sessions to learn more about the postures, benefits and alignments for their own bodies and/or to take time to connect to 
+          themselves and deepen their yoga practice. Each session typically has a mix of people exploring the possibility of teaching and those seeking personal development.
+          </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Do I need to have more experience to take this training?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          No. This training is designed to meet you wherever you are in your journey. The prior practice of Yoga is suggested but by no means necessary. People have attended 
+          in the past with just a little experience, alongside those who have been practising for many years. The course typically has a nice balance of experience, ages and 
+          objectives.
+          </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Can I take this training if I do not want to teach yoga?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          You will leave the course with the knowledge and skills to teach Hatha Yoga classes – and we recommend that you do so. Teacher Training is the very first step on a 
+          continuous learning journey to becoming the Yoga teacher you can be, and teaching practice are crucial, as with anything else in life.
+          </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <!-- End bordered tabs -->
+  </div>
+</div>
+
+

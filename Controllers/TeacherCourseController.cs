@@ -18,7 +18,7 @@ namespace YogaShastraTeacherCourseApp.Controllers
         // GET: TeacherCourse/Details/5
         public ActionResult TCDetails()
         {
-            //var TC = _dbContext.TeacherCourses.FirstOrDefault();
+            var TC = _dbContext.TeacherCourses.FirstOrDefault();
             return View();
         }
 

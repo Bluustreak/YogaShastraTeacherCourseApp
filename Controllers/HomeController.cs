@@ -7,10 +7,12 @@ namespace YogaShastraTeacherCourseApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private ApplicationDbContext _dbContext;
+        public HomeController(ILogger<HomeController> logger,
+            ApplicationDbContext DB)
         {
             _logger = logger;
+            _dbContext = DB;
         }
 
         public IActionResult Index()
